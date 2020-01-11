@@ -389,11 +389,25 @@ tbody .td-btn-container button:first-child {
   background-color: #21c4d7;
   padding: .5em 0;
   margin-bottom: 0.2em;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+tbody .td-btn-container button:first-child:hover {
+  cursor: pointer;
+  background-color: #22d4e7;
 }
 
 tbody .td-btn-container button:last-child {
   background-color: #21d7a1;
   padding: .5em 0;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+tbody .td-btn-container button:last-child:hover {
+  cursor: pointer;
+  background-color: #24f3b5;
 }
 
 .all-list-table {
