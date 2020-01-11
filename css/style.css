@@ -640,6 +640,7 @@ tbody .td-btn-container button:last-child:hover {
   width: 100%;
   padding: 1em;
   outline: none;
+  border: none;
 }
 
 .request-form ::-webkit-input-placeholder {
@@ -693,6 +694,7 @@ tbody .td-btn-container button:last-child:hover {
   width: 100%;
   padding: 1em;
   outline: none;
+  border: none;
 }
 
 .quest-form ::-webkit-input-placeholder {
@@ -802,11 +804,13 @@ tbody .td-btn-container button:last-child:hover {
 }
 
 .calendar .gap-container .gap-item input {
-  padding: .5em 2em;
+  padding-top: .5em;
+  padding-bottom: 0.5em;
+  padding-left: 3em;
   background-image: url(../img/icons/calendar.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left center;
+  background-position: 5px 50%;
   border: 1px solid #ccc;
 }
 
