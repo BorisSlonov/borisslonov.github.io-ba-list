@@ -1,0 +1,51 @@
+.search-form-add {
+    display: none;
+    width: 100%;
+    font-size: 1rem;
+    max-width: 550px;
+    margin: 0 auto;
+    
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        margin: 1em 0;
+        span {
+            color: rgba(0, 0, 0, 0.747);
+        }
+        input {
+            padding: 1em .5em;
+           
+            border: 1px solid rgba(0, 0, 0, 0.308);
+            border-radius: 2px;
+        }
+        select {
+            padding: 1em .5em;
+            
+            border: 1px solid rgba(0, 0, 0, 0.308);
+        }
+        textarea {
+            padding: 2em .5em;
+         
+            border: 1px solid rgba(0, 0, 0, 0.308);
+            border-radius: 2px;
+            resize: none;
+        }
+    }
+}
+.form-add-btn-container {
+    button {
+        width: 100%;
+        padding: 1em 0;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 2px;
+    }
+    .done {
+        background-color: green;
+    }
+    .dismiss {
+        margin-top: .5em;
+        background-color: red;
+    }
+}

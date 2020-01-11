@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=cyrillic,cyrillic-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="footable-bootstrap/css/footable.bootstrap.css">
+  <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>"Бизнес ангелы"</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <!-- item -->
+        <div class="header-container__item">
+          <img src="img/logo.png" alt="">
+        </div>
+        <!-- item -->
+        <div class="header-container__item">
+          <h1>Ангел лист</h1>
+          <span class='h1-span'>сообщества бизнес ангелы</span>
+        </div>
+        <!-- item -->
+        <div class="header-container__item">
+
+          <div class='social'>
+            <h3>Мы в социальных сетях</h3>
+            <div class="social__icon">
+              <div><img src="img/icons/telegram.png" alt=""></div>
+              <div><img src="img/icons/vk.png" alt=""></div>
+              <div><img src="img/icons/instagram.png" alt=""></div>
+              <div><img src="img/icons/twitter.png" alt=""></div>
+              <div><img src="img/icons/facebook.png" alt=""></div>
+              <div><img src="img/icons/youtube.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- section-search -->
+  <section class="search">
+    <3>Список проектов</h2>
+      <div class="container">
+        <!-- search-container -->
+        <div class="search-container">
+          <div class="search-position">
+            <span>Введите название или номер проекта</span>
+            <div class="search-container">
+              <!-- search-form -->
+              <div class="search-form">
+                <div class='search-form__input'><input type="text" placeholder="Производство плюшек">
+                </div>
+                <div class='search-form__btn'>
+                  <button class='search-btn'>
+                    <img src="img/zoom.png" alt="">
+                    <span>Найти</span>
+                  </button>
+                </div>
+              </div>
+              <div class="search-add">
+                <button class='search-add__btn modalbox' href='#form-add'>
+                  <img src="img/add-file.png" alt="">
+                  <span>Добавить свой проект</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- search-form-add -->
+            <div class='search-form-add-container container'>
+
+
+
+              <form action="#" id='form-add' class='search-form-add'>
+                <h3>ввод нового проекта</h3>
+                <div>
+                  <span>Название проекта</span>
+                  <input type="text" placeholder="Производство плюшек">
+                </div>
+
+                <div>
+                  <span>Город</span>
+                  <input type="text" placeholder="Москва">
+                </div>
+
+                <div>
+                  <span>Статус проекта</span>
+                  <select id="test" name="test">
+                    <option value="">Посев</option>
+                    <option value="a1_54">500</option>
+                    <option value="a2_54">1000</option>
+                    <option value="a3_54">1500</option>
+                    <option value="a4_54">2000</option>
+                  </select>
+                </div>
+
+                <div>
+                  <span>Сумма, руб</span>
+                  <input type="number" placeholder="25 000 000">
+                </div>
+
+                <div>
+                  <span>Срок окупаемаости, лет</span>
+                  <input type="number" placeholder="3">
+                </div>
+
+                <div>
+                  <span>ФИО</span>
+                  <input type="text" placeholder="Иванов И И">
+                </div>
+
+                <div>
+                  <span>Телефон</span>
+                  <input type="number" placeholder="+7 999 222 11 00">
+                </div>
+
+                <div>
+                  <span>Почта</span>
+                  <input type="email" placeholder="example@yandex.ru">
+                </div>
+
+                <div>
+                  <span>Краткое описание</span>
+                  <textarea>сеть плюшечных</textarea>
+                </div>
+
+                <div class="form-add-btn-container">
+                  <button class='done'>Отправить проект</button>
+                  <button class='dismiss'>Отменить</button>
+                </div>
+              </form>
+            </div>
+            <!-- search-form-add -->
+          </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <section class='advert-table container'>
+
+    <div class='table-btn-container'>
+      <div class='table-btn-container__span'>
+        <span>рекламный топ-3</span>
+      </div>
+
+
+      <div class='table-btn-container__btn'>
+        <button class='modalbox' href='#form-top'>Разместить проект в ТОП-3</button>
+      </div>
+    </div>
+
+
+    <div id='form-top'>
+      <div class="form-top-container">
+        <h3>поднять проект в топ</h3>
+        <p>Проект размещается на 7 дней<br> стоимость размещения 5 тысяч рублей</p>
+        <p>Отправляя данную заявку Вы соглащаетесь с данными условиями, в противном случае отправлять заявку не стоит
+        </p>
+        <div class='form-top-btn'>
+          <button>поднять</button>
+          <button>отменить</button>
+        </div>
+      </div>
+    </div>
+
+
+    <table class="table container" data-sorting="true">
+      <thead>
+        <tr>
+          <th data-type="number">№</th>
+          <th data-breakpoints="xs sm">Дата регистрации</th>
+          <th data-breakpoints="xs sm md">Понравился</th>
+          <th data-breakpoints="xs sm md">Не понравился</th>
+          <th data-breakpoints="xs sm md" data-type="number" data-decimal-separator=".">Заявок</th>
+          <th data-breakpoints="xs sm md" data-type="text">Город</th>
+          <th data-breakpoints="xs" data-type="text" data-decimal-separator=".">Стадия</th>
+          <th data-type="number">Сумма</th>
+          <th>Название проекта</th>
+          <th data-breakpoints="xs sm md">Краткое описание</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>01.01.20</td>
+          <td>+</td>
+          <td>-</td>
+          <td>10/30</td>
+          <td>Москва</td>
+          <td>Ранний рост</td>
+          <td>5000</td>
+          <td>Производство плюшек</td>
+          <td>Сеть плюшечных</td>
+          <td>
+            <div class='td-btn-container'>
+              <button class='modalbox' href='#request-form'>Задать вопрос</button>
+              <button class='modalbox' href='#quest-form'>Отправить заявку</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>01.01.20</td>
+          <td>+</td>
+          <td>-</td>
+          <td>20/90</td>
+          <td>Москва</td>
+          <td>Ранний рост</td>
+          <td>5000</td>
+          <td>Производство плюшек</td>
+          <td>Сеть плюшечных</td>
+          <td>
+            <div class='td-btn-container'>
+              <button class='modalbox' href='#request-form'>Задать вопрос</button>
+              <button class='modalbox' href='#quest-form'>Отправить заявку</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>01.01.20</td>
+          <td>+</td>
+          <td>-</td>
+          <td>2090</td>
+          <td>Москва</td>
+          <td>Ранний рост</td>
+          <td>5000</td>
+          <td>Производство плюшек</td>
+          <td>Сеть плюшечных</td>
+          <td>
+            <div class='td-btn-container'>
+              <button class='modalbox' href='#request-form'>Задать вопрос</button>
+              <button class='modalbox' href='#quest-form'>Отправить заявку</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- request-form -->
+
+  <form action="#" id="request-form" class='request-form'>
+    <h4>запрос №32</h4>
+    <div>
+      <span>Название проекта</span>
+      <input type="text" placeholder="Производство плюшек">
+    </div>
+    <div>
+      <span>Сумма ваших инвестиций в проект</span>
+      <div class="invest">
+        <input type="text" placeholder="От 5000000">
+        <input type="text" placeholder="До 10000000">
+      </div>
+    </div>
+    <div>
+      <span>Город</span>
+      <input type="text" placeholder="Москва">
+    </div>
+    <div>
+      <span>ФИО</span>
+      <input type="text" placeholder="Иванов И И">
+    </div>
+    <div>
+      <span>Телефон</span>
+      <input type="text" placeholder="8 999 222 11 00">
+    </div>
+    <div>
+      <span>Email</span>
+      <input type="text" placeholder="example@mail.com">
+    </div>
+  </form>
+
+  <!-- request-form -->
+
+
+
+
+  <!-- quest-form -->
+
+  <form action="#" id="quest-form" class='quest-form'>
+    <h4>вопрос №32</h4>
+    <div>
+      <span>Название проекта</span>
+      <input type="text" placeholder="Производство плюшек">
+    </div>
+    <div>
+      <span>Вопрос</span>
+      <input type="text" placeholder="Не указан срок окупаемости">
+    </div>
+    <div>
+      <span>Город</span>
+      <input type="text" placeholder="Москва">
+    </div>
+    <div>
+      <span>ФИО</span>
+      <input type="text" placeholder="Иванов И И">
+    </div>
+    <div>
+      <span>Телефон</span>
+      <input type="text" placeholder="8 999 222 11 00">
+    </div>
+    <div>
+      <span>Email</span>
+      <input type="text" placeholder="example@mail.com">
+    </div>
+  </form>
+
+  <!-- quest-form -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- all-list -->
+  <section class='all-list-table container'>
+
+    <div class='table-btn-container'>
+      <div class='table-btn-container__span'>
+        <span>общий список проектов</span>
+      </div>
+      <div class='table-btn-container__btn'>
+        <button class='modalbox' href='#filter-form'>
+          <span>Фильтр</span>
+          <img src="img/icons/filter-results-button.svg" alt="">
+        </button>
+      </div>
+    </div>
+
+    <table class="table container" data-sorting="true">
+      <thead>
+        <tr>
+          <th data-type="number">№</th>
+          <th data-breakpoints="xs sm">Дата регистрации</th>
+          <th data-breakpoints="xs sm md">Понравился</th>
+          <th data-breakpoints="xs sm md">Не понравился</th>
+          <th data-breakpoints="xs sm md" data-type="number" data-decimal-separator=".">Заявок</th>
+          <th data-breakpoints="xs sm md" data-type="text">Город</th>
+          <th data-breakpoints="xs" data-type="text" data-decimal-separator=".">Стадия</th>
+          <th data-type="number">Сумма</th>
+          <th>Название проекта</th>
+          <th data-breakpoints="xs sm md">Краткое описание</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>01.01.20</td>
+          <td>+</td>
+          <td>-</td>
+          <td>10/30</td>
+          <td>Москва</td>
+          <td>Ранний рост</td>
+          <td>5000</td>
+          <td>Производство плюшек</td>
+          <td>Сеть плюшечных</td>
+          <td>
+            <div class='td-btn-container'>
+              <button class='modalbox' href='#request-form'>Задать вопрос</button>
+              <button class='modalbox' href='#quest-form'>Отправить заявку</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>01.01.20</td>
+          <td>+</td>
+          <td>-</td>
+          <td>20/90</td>
+          <td>Москва</td>
+          <td>Ранний рост</td>
+          <td>5000</td>
+          <td>Производство плюшек</td>
+          <td>Сеть плюшечных</td>
+          <td>
+            <div class='td-btn-container'>
+              <button class='modalbox' href='#request-form'>Задать вопрос</button>
+              <button class='modalbox' href='#quest-form'>Отправить заявку</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>01.01.20</td>
+          <td>+</td>
+          <td>-</td>
+          <td>2090</td>
+          <td>Москва</td>
+          <td>Ранний рост</td>
+          <td>5000</td>
+          <td>Производство плюшек</td>
+          <td>Сеть плюшечных</td>
+          <td>
+            <div class='td-btn-container'>
+              <button class='modalbox' href='#request-form'>Задать вопрос</button>
+              <button class='modalbox' href='#quest-form'>Отправить заявку</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+
+  <!-- filter-form -->
+  <form action="#" id='filter-form'>
+    <div class="container">
+      <div class="answer-container">
+
+        <!-- item -->
+        <div class="answer-item">
+          <div class="answer-item__title">
+            По дате регистрации
+          </div>
+
+          <div class="answer-item__text calendar">
+
+
+            <!-- gap -->
+            <div class="gap-container">
+              <div class='gap-item'>
+                <div class='div-input'><input type="number" placeholder="12.12.12"></div class='div-input'>
+              </div>
+              <div>-</div>
+
+              <div class='gap-item'>
+                <div class='div-input'><input type="number" placeholder="12.12.12"></div>
+              </div>
+            </div>
+          </div>
+          <!-- gap -->
+        </div>
+        <!-- item -->
+
+        <!-- item -->
+        <div class="answer-item">
+          <div class="answer-item__title">
+            По сумме
+          </div>
+          <div class="answer-item__text">
+            <!-- gap -->
+            <div class="gap-container">
+              <div class='gap-item'>
+                <div class='div-input'><input type="number" placeholder="От 500000"></div class='div-input'>
+              </div>
+              <div>-</div>
+
+              <div class='gap-item'>
+                <div class='div-input'><input type="number" placeholder="До 1000000"></div>
+              </div>
+            </div>
+          </div>
+          <!-- gap -->
+        </div>
+
+        <div class="answer-item">
+          <div class="answer-item__title">
+            По стадии
+          </div>
+          <div class="answer-item__text">
+            <div class="checkbox-container">
+              <h4>Выберите стадии</h4>
+              <div>
+                <div>
+                  <input type="checkbox" placeholder="">
+                  <span>Идея</span>
+                </div>
+                <div>
+                  <input type="checkbox" placeholder="">
+                  <span>Ранний рост</span>
+                </div>
+                <div>
+                  <input type="checkbox" placeholder="">
+                  <span>Посев</span>
+                </div>
+                <div>
+                  <input type="checkbox" placeholder="">
+                  <span>СтартАп</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <!-- item -->
+        <div class="answer-item">
+          <div class="answer-item__title">
+            По городу
+          </div>
+          <div class="answer-item__text">
+            <div class="checkbox-container">
+              <h4>Выберите стадии</h4>
+              <div>
+                <div>
+                  <input type="checkbox" placeholder="">
+                  <span>Москва</span>
+                </div>
+                <div>
+                  <input type="checkbox" placeholder="">
+                  <span>Санкт-Петербург</span>
+                </div>
+                <div>
+                  <input type="checkbox" placeholder="">
+                  <span>Ростов-На-Дону</span>
+                </div>
+                <div>
+                  <input type="checkbox" placeholder="">
+                  <span>Таганрок</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <!-- item -->
+        <div class="answer-item">
+          <div class="answer-item__title">
+            По количеству заявок
+          </div>
+          <div class="answer-item__text">
+            <!-- gap -->
+            <div class="gap-container">
+              <div class='gap-item'>
+                <div class='div-input'><input type="number" placeholder="От 500000"></div class='div-input'>
+              </div>
+              <div>-</div>
+
+              <div class='gap-item'>
+                <div class='div-input'><input type="number" placeholder="До 1000000"></div>
+              </div>
+            </div>
+          </div>
+          <!-- gap -->
+        </div>
+        <!-- item -->
+        <div class="answer-item">
+          <div class="answer-item__title">
+            По количеству понравившихся
+          </div>
+          <div class="answer-item__text">
+            <!-- gap -->
+            <div class="gap-container">
+              <div class='gap-item'>
+                <div class='div-input'><input type="number" placeholder="От 500000"></div class='div-input'>
+              </div>
+              <div>-</div>
+
+              <div class='gap-item'>
+                <div class='div-input'><input type="number" placeholder="До 1000000"></div>
+              </div>
+            </div>
+          </div>
+          <!-- gap -->
+        </div>
+        <!-- item -->
+
+        <div class="answer-item">
+          <div class="answer-item__title">
+            По количеству не понравившихся
+          </div>
+          <div class="answer-item__text">
+            <!-- gap -->
+            <div class="gap-container">
+              <div class='gap-item'>
+                <div class='div-input'><input type="number" placeholder="От 500000"></div class='div-input'>
+              </div>
+              <div>-</div>
+
+              <div class='gap-item'>
+                <div class='div-input'><input type="number" placeholder="До 1000000"></div>
+              </div>
+            </div>
+          </div>
+          <!-- gap -->
+        </div>
+        
+      </div>
+      <div class="filter-btn-container">
+        <button class='filter-btn'>
+          <span>Фильтровать</span>
+        </button>
+      </div>
+    </div>
+  </form>
+  <!-- filter-form -->
+
+
+
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src='bootstrap-4.0.0-dist/js/bootstrap.min.js'></script>
+  <script src='footable-bootstrap/js/footable.min.js'></script>
+  <script src='footable-bootstrap/js/footable.js'></script>
+  <script src="fancybox-master/dist/jquery.fancybox.js"></script>
+  <script src='js/script.js'></script>
+</body>
+
+</html>
