@@ -24,7 +24,6 @@
 
     &__title {
         position: relative;
-        font-size: 1.2rem;
         padding-left: 30px;
         margin-top: 25px;
         margin-bottom: 15px;
@@ -77,11 +76,14 @@
             align-items: center;
 
             input {
-                padding: .5em 2em;
+                padding-top: .5em;
+                padding-bottom: 0.5em;
+                padding-left: 3em;
                 background-image: url(../img/icons/calendar.svg);
+                
                 background-repeat: no-repeat;
                 background-size: contain;
-                background-position: left center;
+                background-position: 5px 50%;
                 border: 1px solid #ccc;
             }
 
@@ -161,7 +163,7 @@
         }
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .calendar {
         .gap-container {
             flex-direction: column;

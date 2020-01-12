@@ -1,11 +1,14 @@
 //header
 .header-container {
-    text-align: center;
-    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
 
     &__item {
-        margin-bottom: 1.5em;
-
+        flex-basis: 33.333%;
+        text-align: center;
+        margin-top: 1.5em;
         img {
             width: 100%;
             max-width: 500px;
@@ -24,6 +27,14 @@
             line-height: 1.5;
             letter-spacing: 1.8px;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+       
     }
 }
 
@@ -59,30 +70,47 @@
 }
 
 .social {
-    border-top: 1px solid rgba(255, 255, 255, 0.644);
-
+  
     h3 {
-        margin-top: 1em;
         margin-bottom: 0.2em;
+        text-align: right;
+        color: rgba(0, 0, 0, 0.637);
     }
 
     &__icon {
         display: flex;
-        justify-content: center;
-        margin-right: 0.25em;
-
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 6em;
+        float: right;
+        margin-right: 1.7em;
+        div {
+            padding-left: .2em;
+            flex-basis: 33.333%;
+        }
         img {
             width: 100%;
             max-width: 2em;
             border-radius: 5px;
         }
-
-        div:not(:first-child) {
-            margin-left: 0.25em;
-        }
+        
     }
 }
-
+@media (max-width: 768px) {
+    .social {
+        h3 {
+            text-align: center;
+        }
+        &__icon {
+            max-width: 100%;
+            float: none;
+            div {
+                flex-basis: 16.666%;
+            }
+        }
+       
+    }
+}
 @media (max-width: 425px) {
     .blue-bg {
         flex-direction: column;
@@ -99,7 +127,7 @@
 
 //search
 .search {
-    margin-top: 2.5em;
+    margin-top: 1.5em;
 }
 
 h3 {
@@ -218,7 +246,11 @@ h3 {
         background-color: #037c9f;
         color: #fff;
         font-size: 1rem;
-
+        transition: all .6s;
+        &:hover {
+            cursor: pointer;
+            background-color: #0393bb;
+        }
         img {
             width: 100%;
             max-width: 1em;
@@ -244,6 +276,7 @@ h3 {
     table {
         box-shadow: 0 0 10px 6px rgba(204, 204, 204, 0.466);
         border: 1px solid rgba(204, 204, 204, 0.418);
+        
     }
 
     thead {
@@ -257,10 +290,11 @@ h3 {
     }
 
     tbody {
-        background-color: rgba(255, 255, 255, 0.5);
 
+        background-color: rgba(255, 255, 255, 0.65);
         td {
             padding: 1em .5em;
+           
 
         }
 
@@ -345,21 +379,34 @@ tbody {
 
         button:first-child {
             background-color: #21c4d7;
-      
             padding: .5em 0;
             margin-bottom: 0.2em;
+            transition: all .6s;
+            &:hover {
+                cursor: pointer;
+                background-color: #22d4e7;
+            }
         }
 
         button:last-child {
             background-color: #21d7a1;
-         
             padding: .5em 0;
+            transition: all .6s;
+            &:hover {
+                cursor: pointer;
+                background-color: #24f3b5;
+            }
         }
     }
 }
 
 
-
+td {
+    img {
+         
+        max-width: 20px;
+    }
+}
 
 
 
@@ -386,7 +433,7 @@ tbody {
     }
 
     tbody {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.65);
 
         td {
             padding: 1em .5em;
