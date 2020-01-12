@@ -222,6 +222,10 @@ h3 {
   margin: 0 auto;
 }
 
+.search-position span {
+  font-size: 0.9rem;
+}
+
 .search-form {
   display: -webkit-box;
   display: -ms-flexbox;
