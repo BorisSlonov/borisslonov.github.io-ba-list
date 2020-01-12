@@ -25,7 +25,7 @@ body {
 .container {
   max-width: 2560px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 3em;
 }
 
 @media (max-width: 1440px) {
@@ -49,6 +49,7 @@ body {
 @media (max-width: 425px) {
   .container {
     max-width: 425px;
+    padding: 0 2em;
   }
 }
 
@@ -398,12 +399,13 @@ h3 {
 
 .advert-table .table-btn-container__span {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #ff2a00;
+  text-transform: center;
 }
 
 .advert-table .table-btn-container__btn button {
-  font-size: 1rem;
+  font-size: .8rem;
   padding: .5em 1em;
   background-color: #019cd6;
   color: #fff;
@@ -543,6 +545,22 @@ td img {
   width: 100%;
   max-width: .8em;
   margin-left: .2em;
+}
+
+input[placeholder] {
+  text-overflow: ellipsis;
+}
+
+input::-moz-placeholder {
+  text-overflow: ellipsis;
+}
+
+input:-moz-placeholder {
+  text-overflow: ellipsis;
+}
+
+input:-ms-input-placeholder {
+  text-overflow: ellipsis;
 }
 
 .search-form-add {
