@@ -976,7 +976,6 @@ input:-ms-input-placeholder {
 
 .filter-btn-container {
   text-align: center;
-  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -988,6 +987,7 @@ input:-ms-input-placeholder {
   padding: 1em 0;
   background-color: #21c4d7;
   color: #fff;
+  font-size: .9rem;
 }
 
 @media (max-width: 500px) {
