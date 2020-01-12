@@ -33,7 +33,7 @@ $(document).ready(function () {
 
 
   //spoiler
-  $('.answer-item__title').click(function (event) {
+  $('.answer-item__title').click(function event () {
     if($('.answer-container').hasClass('one')){
         $('.answer-item__title').not($(this)).removeClass('activeA');
         $('.answer-item__text').not($(this).next()).slideUp(300);
@@ -42,7 +42,7 @@ $(document).ready(function () {
     
 });
 
-
+//picker
 
 
 
