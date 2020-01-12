@@ -573,6 +573,35 @@ td img {
   margin-left: .2em;
 }
 
+@media (max-width: 425px) {
+  .all-list-table .table-btn-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .all-list-table .table-btn-container__span {
+    margin-bottom: 0.5em;
+    width: 100%;
+  }
+  .all-list-table .table-btn-container__span span {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .all-list-table .table-btn-container__btn {
+    width: 100%;
+  }
+  .all-list-table .table-btn-container__btn button {
+    width: 100%;
+  }
+  .all-list-table .table-btn-container__btn button span {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 input[placeholder] {
   text-overflow: ellipsis;
 }
@@ -910,14 +939,15 @@ input:-ms-input-placeholder {
 }
 
 .calendar .gap-container .gap-item input {
-  padding-top: .5em;
-  padding-bottom: 0.5em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
   padding-left: 3em;
   background-image: url(../img/icons/calendar.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 5px 50%;
   border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 .gap-container {
@@ -939,15 +969,23 @@ input:-ms-input-placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+}
+
+.gap-container .gap-item .div-input {
+  width: 100%;
 }
 
 .gap-container .gap-item input {
-  padding: .5em;
+  padding: 1.2em 2em;
+  width: 100%;
   border: 1px solid rgba(204, 204, 204, 0.404);
+  border-radius: 2px;
 }
 
 .gap-container ::-webkit-input-placeholder {
   text-align: center;
+  font-size: .9rem;
 }
 
 .gap-container :-moz-placeholder {
@@ -976,7 +1014,7 @@ input:-ms-input-placeholder {
 
 .filter-btn-container {
   text-align: center;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .filter-btn {
