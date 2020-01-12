@@ -442,6 +442,16 @@ h3 {
   .advert-table .table-btn-container__span {
     margin-bottom: 0.5em;
   }
+  .advert-table .table-btn-container__btn {
+    width: 100%;
+  }
+  .advert-table .table-btn-container__btn button {
+    width: 100%;
+  }
+  .advert-table .table-btn-container__btn button span {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .footable-details tbody tr th {
