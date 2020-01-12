@@ -20,20 +20,30 @@
   <header>
     <div class="container">
       <div class="header-container">
+
+        <!-- item -->
+        <div class="header-container__item">
+
+        </div>
+        <!-- item -->
+
+
         <!-- item -->
         <div class="header-container__item">
           <img src="img/logo.png" alt="">
+
+          <div>
+            <h1>Ангел лист</h1>
+            <span class='h1-span'>сообщества бизнес ангелы</span>
+          </div>
         </div>
         <!-- item -->
-        <div class="header-container__item">
-          <h1>Ангел лист</h1>
-          <span class='h1-span'>сообщества бизнес ангелы</span>
-        </div>
+
         <!-- item -->
         <div class="header-container__item">
 
           <div class='social'>
-            <h3>Мы в социальных сетях</h3>
+            <h3>Мы в соц сетях</h3>
             <div class="social__icon">
               <div><img src="img/icons/telegram.png" alt=""></div>
               <div><img src="img/icons/vk.png" alt=""></div>
@@ -44,104 +54,104 @@
             </div>
           </div>
         </div>
+        <!-- item -->
       </div>
     </div>
   </header>
 
   <!-- section-search -->
   <section class="search">
-    <h3>Список проектов</h3>
-      <div class="container">
-        <!-- search-container -->
-        <div class="search-container">
-          <div class="search-position">
-            <span>Введите название или номер проекта</span>
-            <div class="search-container">
-              <!-- search-form -->
-              <div class="search-form">
-                <div class='search-form__input'><input type="text" placeholder="Производство плюшек">
-                </div>
-                <div class='search-form__btn'>
-                  <button class='search-btn'>
-                    <img src="img/zoom.png" alt="">
-                    <span>Найти</span>
-                  </button>
-                </div>
+    <div class="container">
+      <!-- search-container -->
+      <div class="search-container">
+        <div class="search-position">
+          <span>Введите название или номер проекта</span>
+          <div class="search-container">
+            <!-- search-form -->
+            <div class="search-form">
+              <div class='search-form__input'><input type="text" placeholder="Производство плюшек">
               </div>
-              <div class="search-add">
-                <button class='search-add__btn modalbox' href='#form-add'>
-                  <img src="img/add-file.png" alt="">
-                  <span>Добавить свой проект</span>
+              <div class='search-form__btn'>
+                <button class='search-btn'>
+                  <img src="img/zoom.png" alt="">
+                  <span>Найти</span>
                 </button>
               </div>
             </div>
-
-            <!-- search-form-add -->
-            <div class='search-form-add-container container'>
-
-
-
-              <form action="#" id='form-add' class='search-form-add'>
-                <h3>ввод нового проекта</h3>
-                <div>
-                  <span>Название проекта</span>
-                  <input type="text" placeholder="Производство плюшек">
-                </div>
-
-                <div>
-                  <span>Город</span>
-                  <input type="text" placeholder="Москва">
-                </div>
-
-                <div>
-                  <span>Статус проекта</span>
-                  <select id="test" name="test">
-                    <option value="">Посев</option>
-                    <option value="a1_54">500</option>
-                    <option value="a2_54">1000</option>
-                    <option value="a3_54">1500</option>
-                    <option value="a4_54">2000</option>
-                  </select>
-                </div>
-
-                <div>
-                  <span>Сумма, руб</span>
-                  <input type="number" placeholder="25 000 000">
-                </div>
-
-                <div>
-                  <span>Срок окупаемаости, лет</span>
-                  <input type="number" placeholder="3">
-                </div>
-
-                <div>
-                  <span>ФИО</span>
-                  <input type="text" placeholder="Иванов И И">
-                </div>
-
-                <div>
-                  <span>Телефон</span>
-                  <input type="number" placeholder="+7 999 222 11 00">
-                </div>
-
-                <div>
-                  <span>Почта</span>
-                  <input type="email" placeholder="example@yandex.ru">
-                </div>
-
-                <div>
-                  <span>Краткое описание</span>
-                  <textarea>сеть плюшечных</textarea>
-                </div>
-
-                <div class="form-add-btn-container">
-                  <button class='done'>Отправить проект</button>
-                  <button class='dismiss'>Отменить</button>
-                </div>
-              </form>
+            <div class="search-add">
+              <button class='search-add__btn modalbox' href='#form-add'>
+                <img src="img/add-file.png" alt="">
+                <span>Добавить свой проект</span>
+              </button>
             </div>
-            <!-- search-form-add -->
           </div>
+
+          <!-- search-form-add -->
+          <div class='search-form-add-container container'>
+
+
+
+            <form action="#" id='form-add' class='search-form-add'>
+              <h3>ввод нового проекта</h3>
+              <div>
+                <span>Название проекта</span>
+                <input type="text" placeholder="Производство плюшек">
+              </div>
+
+              <div>
+                <span>Город</span>
+                <input type="text" placeholder="Москва">
+              </div>
+
+              <div>
+                <span>Статус проекта</span>
+                <select id="test" name="test">
+                  <option value="">Посев</option>
+                  <option value="a1_54">500</option>
+                  <option value="a2_54">1000</option>
+                  <option value="a3_54">1500</option>
+                  <option value="a4_54">2000</option>
+                </select>
+              </div>
+
+              <div>
+                <span>Сумма, руб</span>
+                <input type="number" placeholder="25 000 000">
+              </div>
+
+              <div>
+                <span>Срок окупаемаости, лет</span>
+                <input type="number" placeholder="3">
+              </div>
+
+              <div>
+                <span>ФИО</span>
+                <input type="text" placeholder="Иванов И И">
+              </div>
+
+              <div>
+                <span>Телефон</span>
+                <input type="number" placeholder="+7 999 222 11 00">
+              </div>
+
+              <div>
+                <span>Почта</span>
+                <input type="email" placeholder="example@yandex.ru">
+              </div>
+
+              <div>
+                <span>Краткое описание</span>
+                <textarea>сеть плюшечных</textarea>
+              </div>
+
+              <div class="form-add-btn-container">
+                <button class='done'>Отправить проект</button>
+                <button class='dismiss'>Отменить</button>
+              </div>
+            </form>
+          </div>
+          <!-- search-form-add -->
+        </div>
   </section>
 
 
@@ -170,7 +180,7 @@
     <div id='form-top'>
       <div class="form-top-container">
         <h3>поднять проект в топ</h3>
-        <p>Проект размещается на 7 дней<br> стоимость размещения 5 тысяч рублей</p>
+        <p>Проект размещается на <b>7 дней</b><br> стоимость размещения <b>5 тысяч рублей</b></p>
         <p>Отправляя данную заявку Вы соглащаетесь с данными условиями, в противном случае отправлять заявку не стоит
         </p>
         <div class='form-top-btn'>
@@ -201,8 +211,12 @@
         <tr>
           <td>1</td>
           <td>01.01.20</td>
-          <td>+</td>
-          <td>-</td>
+          <td>
+            <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
+          </td>
+          <td>
+            <img src="img/icons/thumbs-down-silhouette.svg" alt="">
+          </td>
           <td>10/30</td>
           <td>Москва</td>
           <td>Ранний рост</td>
@@ -219,8 +233,12 @@
         <tr>
           <td>2</td>
           <td>01.01.20</td>
-          <td>+</td>
-          <td>-</td>
+          <td>
+            <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
+          </td>
+          <td>
+            <img src="img/icons/thumbs-down-silhouette.svg" alt="">
+          </td>
           <td>20/90</td>
           <td>Москва</td>
           <td>Ранний рост</td>
@@ -237,8 +255,12 @@
         <tr>
           <td>3</td>
           <td>01.01.20</td>
-          <td>+</td>
-          <td>-</td>
+          <td>
+            <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
+          </td>
+          <td>
+            <img src="img/icons/thumbs-down-silhouette.svg" alt="">
+          </td>
           <td>2090</td>
           <td>Москва</td>
           <td>Ранний рост</td>
@@ -254,7 +276,7 @@
         </tr>
       </tbody>
     </table>
-    
+
   </section>
 
 
@@ -315,8 +337,12 @@
         <tr>
           <td>1</td>
           <td>01.01.20</td>
-          <td>+</td>
-          <td>-</td>
+          <td>
+            <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
+          </td>
+          <td>
+            <img src="img/icons/thumbs-down-silhouette.svg" alt="">
+          </td>
           <td>10/30</td>
           <td>Москва</td>
           <td>Ранний рост</td>
@@ -333,8 +359,12 @@
         <tr>
           <td>2</td>
           <td>01.01.20</td>
-          <td>+</td>
-          <td>-</td>
+          <td>
+            <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
+          </td>
+          <td>
+            <img src="img/icons/thumbs-down-silhouette.svg" alt="">
+          </td>
           <td>20/90</td>
           <td>Москва</td>
           <td>Ранний рост</td>
@@ -351,8 +381,12 @@
         <tr>
           <td>3</td>
           <td>01.01.20</td>
-          <td>+</td>
-          <td>-</td>
+          <td>
+            <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
+          </td>
+          <td>
+            <img src="img/icons/thumbs-down-silhouette.svg" alt="">
+          </td>
           <td>2090</td>
           <td>Москва</td>
           <td>Ранний рост</td>
@@ -389,7 +423,8 @@
             <!-- gap -->
             <div class="gap-container">
               <div class='gap-item'>
-                <div class='div-input'><input type="number" placeholder="12.12.12"></div class='div-input'>
+                <div class='div-input'><input type="number" placeholder="12.12.12" class='datapicker'></div
+                  class='div-input'>
               </div>
               <div>-</div>
 
@@ -543,7 +578,7 @@
           </div>
           <!-- gap -->
         </div>
-        
+
       </div>
       <div class="filter-btn-container">
         <button class='filter-btn'>
@@ -558,75 +593,75 @@
 
   <div>
 
-  <!-- request-form -->
+    <!-- request-form -->
 
-  <form action="#" id="request-form" class='request-form'>
-    <h4>запрос №32</h4>
-    <div>
-      <span>Название проекта</span>
-      <input type="text" placeholder="Производство плюшек">
-    </div>
-    <div>
-      <span>Сумма ваших инвестиций в проект</span>
-      <div class="invest">
-        <input type="text" placeholder="От 5000000">
-        <input type="text" placeholder="До 10000000">
+    <form action="#" id="request-form" class='request-form'>
+      <h4>запрос №32</h4>
+      <div>
+        <span>Название проекта</span>
+        <input type="text" placeholder="Производство плюшек">
       </div>
-    </div>
-    <div>
-      <span>Город</span>
-      <input type="text" placeholder="Москва">
-    </div>
-    <div>
-      <span>ФИО</span>
-      <input type="text" placeholder="Иванов И И">
-    </div>
-    <div>
-      <span>Телефон</span>
-      <input type="text" placeholder="8 999 222 11 00">
-    </div>
-    <div>
-      <span>Email</span>
-      <input type="text" placeholder="example@mail.com">
-    </div>
-  </form>
+      <div>
+        <span>Сумма ваших инвестиций в проект</span>
+        <div class="invest">
+          <input type="text" placeholder="От 5000000">
+          <input type="text" placeholder="До 10000000">
+        </div>
+      </div>
+      <div>
+        <span>Город</span>
+        <input type="text" placeholder="Москва">
+      </div>
+      <div>
+        <span>ФИО</span>
+        <input type="text" placeholder="Иванов И И">
+      </div>
+      <div>
+        <span>Телефон</span>
+        <input type="text" placeholder="8 999 222 11 00">
+      </div>
+      <div>
+        <span>Email</span>
+        <input type="text" placeholder="example@mail.com">
+      </div>
+    </form>
 
-  <!-- request-form -->
+    <!-- request-form -->
 
 
 
 
-  <!-- quest-form -->
+    <!-- quest-form -->
 
-  <form action="#" id="quest-form" class='quest-form'>
-    <h4>вопрос №32</h4>
-    <div>
-      <span>Название проекта</span>
-      <input type="text" placeholder="Производство плюшек">
-    </div>
-    <div>
-      <span>Вопрос</span>
-      <input type="text" placeholder="Не указан срок окупаемости">
-    </div>
-    <div>
-      <span>Город</span>
-      <input type="text" placeholder="Москва">
-    </div>
-    <div>
-      <span>ФИО</span>
-      <input type="text" placeholder="Иванов И И">
-    </div>
-    <div>
-      <span>Телефон</span>
-      <input type="text" placeholder="8 999 222 11 00">
-    </div>
-    <div>
-      <span>Email</span>
-      <input type="text" placeholder="example@mail.com">
-    </div>
-  </form>
+    <form action="#" id="quest-form" class='quest-form'>
+      <h4>вопрос №32</h4>
+      <div>
+        <span>Название проекта</span>
+        <input type="text" placeholder="Производство плюшек">
+      </div>
+      <div>
+        <span>Вопрос</span>
+        <input type="text" placeholder="Не указан срок окупаемости">
+      </div>
+      <div>
+        <span>Город</span>
+        <input type="text" placeholder="Москва">
+      </div>
+      <div>
+        <span>ФИО</span>
+        <input type="text" placeholder="Иванов И И">
+      </div>
+      <div>
+        <span>Телефон</span>
+        <input type="text" placeholder="8 999 222 11 00">
+      </div>
+      <div>
+        <span>Email</span>
+        <input type="text" placeholder="example@mail.com">
+      </div>
+    </form>
 
-  <!-- quest-form -->
+    <!-- quest-form -->
   </div>
 
 
