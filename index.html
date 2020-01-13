@@ -113,15 +113,20 @@
                 <input type="text" placeholder="Москва">
               </div>
 
-              <div>
-                <span>Статус проекта</span>
-                <select id="test" name="test">
-                  <option value="">Посев</option>
-                  <option value="a1_54">500</option>
-                  <option value="a2_54">1000</option>
-                  <option value="a3_54">1500</option>
-                  <option value="a4_54">2000</option>
-                </select>
+              <div class='select'>
+                <span class='select-span'>Статус проекта</span>
+                <label for="select" class="select">
+                  <input type="radio" name="list" value="not_changed" id="bg" checked />
+                  <input type="radio" name="list" value="not_changed" id="select">
+                  <label class="bg" for="bg"></label>
+                  <div class="items">
+                    <input type="radio" name="list" value="first_value" id="list[0]">
+                    <label for="list[0]">Посев</label>
+                    <input type="radio" name="list" value="second_value" id="list[1]">
+                    <label for="list[1]">Посев</label>
+                    <span id="text">Выберите статус</span>
+                  </div>
+                </label>
               </div>
 
               <div>
@@ -156,7 +161,7 @@
 
               <div class="form-add-btn-container">
                 <button class='done'>Отправить проект</button>
-                <button class='dismiss'>Отменить</button>
+             <button class='dismiss'>Отменить</button>
               </div>
             </form>
           </div>
@@ -207,15 +212,15 @@
         <thead>
           <tr>
             <th data-type="number">№</th>
-            <th data-breakpoints="xs sm">Дата регистрации</th>
-            <th data-breakpoints="xs sm md">Понравился</th>
-            <th data-breakpoints="xs sm md">Не понравился</th>
-            <th data-breakpoints="xs sm md" data-type="number" data-decimal-separator=".">Заявок</th>
-            <th data-breakpoints="xs sm md" data-type="text">Город</th>
-            <th data-breakpoints="xs" data-type="text" data-decimal-separator=".">Стадия</th>
-            <th data-type="number">Сумма</th>
+            <th data-breakpoints="xs">Дата регистрации</th>
+            <th data-breakpoints="xs sm">Понравился</th>
+            <th data-breakpoints="xs sm">Не понравился</th>
+            <th data-breakpoints="">Заявок</th>
+            <th data-breakpoints="xs">Город</th>
+            <th data-breakpoints="xs">Стадия проекта</th>
+            <th data-breakpoints="xs">Сумма</th>
             <th>Название проекта</th>
-            <th data-breakpoints="xs sm md">Краткое описание</th>
+            <th data-breakpoints="xs sm">Краткое описание</th>
             <th></th>
           </tr>
         </thead>
@@ -228,7 +233,7 @@
                 <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
               </button>
             </td>
-         <td class='like-container'>
+            <td class='dislike-container'>
               <button>
                 <img src="img/icons/thumbs-down-silhouette.svg" alt="">
               </button>
@@ -254,7 +259,7 @@
                 <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
               </button>
             </td>
-           <td class='like-container'>
+            <td class='dislike-container'>
               <button>
                 <img src="img/icons/thumbs-down-silhouette.svg" alt="">
               </button>
@@ -280,7 +285,7 @@
                 <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
               </button>
             </td>
-            <td class='like-container'>
+            <td class='dislike-container'>
               <button>
                 <img src="img/icons/thumbs-down-silhouette.svg" alt="">
               </button>
@@ -349,15 +354,16 @@
         <thead>
           <tr>
             <th data-type="number">№</th>
-            <th data-breakpoints="xs sm">Дата регистрации</th>
-            <th data-breakpoints="xs sm md">Понравился</th>
-            <th data-breakpoints="xs sm md">Не понравился</th>
-            <th data-breakpoints="xs sm md" data-type="number" data-decimal-separator=".">Заявок</th>
-            <th data-breakpoints="xs sm md" data-type="text">Город</th>
-            <th data-breakpoints="xs" data-type="text" data-decimal-separator=".">Стадия</th>
-            <th data-type="number">Сумма</th>
+            <th data-type="number">№</th>
+            <th data-breakpoints="xs">Дата регистрации</th>
+            <th data-breakpoints="xs sm">Понравился</th>
+            <th data-breakpoints="xs sm">Не понравился</th>
+            <th data-breakpoints="">Заявок</th>
+            <th data-breakpoints="xs">Город</th>
+            <th data-breakpoints="xs">Стадия проекта</th>
+            <th data-breakpoints="xs">Сумма</th>
             <th>Название проекта</th>
-            <th data-breakpoints="xs sm md">Краткое описание</th>
+            <th data-breakpoints="xs sm">Краткое описание</th>
             <th></th>
           </tr>
         </thead>
@@ -365,12 +371,12 @@
           <tr>
             <td>1</td>
             <td>01.01.20</td>
-           <td class='like-container'>
+            <td class='like-container'>
               <button>
                 <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
               </button>
             </td>
-           <td class='like-container'>
+            <td class='dislike-container'>
               <button>
                 <img src="img/icons/thumbs-down-silhouette.svg" alt="">
               </button>
@@ -391,12 +397,12 @@
           <tr>
             <td>2</td>
             <td>01.01.20</td>
-           <td class='like-container'>
+            <td class='like-container'>
               <button>
                 <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
               </button>
             </td>
-         <td class='like-container'>
+            <td class='dislike-container'>
               <button>
                 <img src="img/icons/thumbs-down-silhouette.svg" alt="">
               </button>
@@ -417,12 +423,12 @@
           <tr>
             <td>3</td>
             <td>01.01.20</td>
-           <td class='like-container'>
+            <td class='like-container'>
               <button>
                 <img src="img/icons/thumbs-up-hand-symbol.svg" alt="">
               </button>
             </td>
-          <td class='like-container'>
+            <td class='dislike-container'>
               <button>
                 <img src="img/icons/thumbs-down-silhouette.svg" alt="">
               </button>
@@ -465,12 +471,12 @@
             <!-- gap -->
             <div class="gap-container">
               <div class='gap-item'>
-                <div class='div-input'><input type="number" placeholder="12.12.12"></div class='div-input'>
+                <div class='div-input'><input type="date" placeholder="12.12.12"></div class='div-input'>
               </div>
               <div>-</div>
 
               <div class='gap-item'>
-                <div class='div-input'><input type="number" placeholder="12.12.12"></div>
+                <div class='div-input'><input type="date" placeholder="12.12.12"></div>
               </div>
             </div>
           </div>
