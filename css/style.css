@@ -258,6 +258,7 @@ h3 {
   padding-left: 15px;
   outline: #08d85856;
   border: none;
+  font-family: inherit;
 }
 
 .search-form__input ::-webkit-input-placeholder {
@@ -367,7 +368,7 @@ h3 {
 
 .advert-table {
   padding: 5em 0;
-  text-align: center;
+  text-align: left;
   font-size: 0.8rem;
 }
 
@@ -392,6 +393,11 @@ h3 {
   padding: 1%;
 }
 
+.advert-table .footable-sortable .footable-last-visible {
+  width: 100%;
+  max-width: 50px;
+}
+
 .advert-table tbody {
   background-color: rgba(255, 255, 255, 0.65);
 }
@@ -406,6 +412,7 @@ h3 {
 
 .advert-table tbody tr {
   border: 5px solid #e4e2d7;
+  width: 100%;
 }
 
 .advert-table .table-btn-container {
@@ -491,6 +498,8 @@ tbody .td-btn-container {
   text-align: center;
   font-size: 1rem;
   width: 100%;
+  max-width: 180px;
+  margin-left: auto;
 }
 
 tbody .td-btn-container button {
@@ -545,7 +554,27 @@ td img {
 }
 
 .like-container button:hover {
-  background-color: #e4e2d74d;
+  background-color: #06f762;
+}
+
+.dislike-container button {
+  padding: .5em;
+  border-radius: 10px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dislike-container button:hover {
+  background-color: #ff2a00;
 }
 
 .all-list-table {
@@ -687,6 +716,10 @@ input:-ms-input-placeholder {
   margin: 0 auto;
 }
 
+.search-form-add h3 {
+  text-align: left;
+}
+
 .search-form-add div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -699,29 +732,183 @@ input:-ms-input-placeholder {
 }
 
 .search-form-add div span {
-  color: rgba(0, 0, 0, 0.747);
+  color: rgba(0, 0, 0, 0.575);
+  margin-left: 10px;
+  margin-bottom: 2.5px;
 }
 
 .search-form-add div input {
-  padding: 1em .5em;
+  padding: .4em .9em;
+  font-size: .7em;
   border: 1px solid rgba(0, 0, 0, 0.308);
   border-radius: 2px;
-}
-
-.search-form-add div select {
-  padding: 1em .5em;
-  border: 1px solid rgba(0, 0, 0, 0.308);
+  outline: none;
+  font-family: inherit;
 }
 
 .search-form-add div textarea {
-  padding: 2em .5em;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 3.5em;
+  font-family: inherit;
+  font-size: .7rem;
   border: 1px solid rgba(0, 0, 0, 0.308);
   border-radius: 2px;
   resize: none;
+  outline: none;
+}
+
+.search-form-add .select {
+  margin-bottom: 1.6em;
+}
+
+.search-form-add .select .select-span {
+  margin-bottom: 5px;
+}
+
+.search-form-add .select input {
+  display: none;
+}
+
+.search-form-add .select #text {
+  position: absolute;
+  display: block;
+  top: 0;
+  margin-top: .8em;
+  width: 100%;
+  font-family: inherit;
+  font-size: .7rem;
+}
+
+.search-form-add .select .select {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: .7em;
+}
+
+.search-form-add .select .select:before {
+  content: ">";
+  display: inline-block;
+  position: absolute;
+  right: 0.5em;
+  z-index: 2;
+  width: 30px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.search-form-add .select .select input[name="list"]:not(:checked) ~ #text {
+  color: #000;
+  background: white;
+}
+
+.search-form-add .select .select input[name="list"]:checked ~ #text {
+  background: transparent;
+  color: transparent;
+  z-index: 2;
+}
+
+.search-form-add .select #select:disabled ~ .items #text {
+  background: #eee;
+}
+
+.search-form-add .select .items {
+  display: block;
+  padding-bottom: 1.5em;
+  top: -15px;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  border-radius: 2px;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+}
+
+.search-form-add .select #select:not(:checked) ~ .items {
+  height: 30px;
+}
+
+.search-form-add .select .items label {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.822);
+  display: none;
+  padding-left: 1em;
+  background: white;
+  padding-top: 0.8em;
+  padding-bottom: 0.5em;
+}
+
+.search-form-add .select .items label:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.search-form-add .select #select:checked ~ .items {
+  padding-top: 30px;
+}
+
+.search-form-add .select #select:checked ~ .items label {
+  display: block;
+}
+
+.search-form-add .select .items input:checked + label {
+  display: block !important;
+  border: none;
+  background: white;
+}
+
+.search-form-add .select #select:checked ~ .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.search-form-add .select a {
+  display: block;
+  width: 160px;
+  text-align: center;
+  padding: 5px 0;
+  color: black;
+  text-decoration: none;
+}
+
+.search-form-add .select a:hover {
+  cursor: pointer;
+  border-color: red;
+}
+
+.search-form-add ::-webkit-input-placeholder {
+  color: #000;
+  font-size: .7rem;
+}
+
+.search-form-add :-moz-placeholder {
+  /* Firefox 18- */
+  color: #000;
+  font-size: .7rem;
+}
+
+.search-form-add ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #000;
+  font-size: .7rem;
+}
+
+.search-form-add :-ms-input-placeholder {
+  color: #000;
+  font-size: .7rem;
 }
 
 .form-add-btn-container button {
-  width: 100%;
   padding: 1em 0;
   color: #fff;
   text-transform: uppercase;
@@ -735,20 +922,20 @@ input:-ms-input-placeholder {
 }
 
 .form-add-btn-container .done {
-  background-color: #21d750;
+  background-color: #29b133;
 }
 
 .form-add-btn-container .done:hover {
-  background-color: #00d386;
+  background-color: #31ca3b;
 }
 
 .form-add-btn-container .dismiss {
   margin-top: .5em;
-  background-color: #ff2a00;
+  background-color: #b22c29;
 }
 
 .form-add-btn-container .dismiss:hover {
-  background-color: #ff2a00d2;
+  background-color: #cc322f;
 }
 
 #form-top {
@@ -927,6 +1114,8 @@ input:-ms-input-placeholder {
 
 #filter-form {
   display: none;
+  width: 100%;
+  max-width: 550px;
 }
 
 #filter-form .container {
@@ -1013,15 +1202,16 @@ input:-ms-input-placeholder {
 }
 
 .calendar .gap-container .gap-item input {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 4em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 4.5em;
   background-image: url(../img/icons/calendar.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 5px 50%;
   border: 1px solid #ccc;
   border-radius: 2px;
+  font-family: inherit;
 }
 
 .gap-container {
@@ -1051,7 +1241,9 @@ input:-ms-input-placeholder {
 }
 
 .gap-container .gap-item input {
-  padding: 1em 0 1em 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
   width: 100%;
   border: 1px solid rgba(204, 204, 204, 0.404);
   border-radius: 2px;
