@@ -16,7 +16,6 @@
     padding: 0 1em;  
     background-color: #fff;
     width: 100%;
-    max-width: 400px;
     margin: 5px auto;
     border: 1px solid rgba(0, 0, 0, 0.158);
  
@@ -76,15 +75,16 @@
             align-items: center;
 
             input {
-                padding-top: .5em;
-                padding-bottom: 0.5em;
-                padding-left: 3em;
+                padding-top: 1em;
+                padding-bottom: 1em;
+                padding-left: 4em;
                 background-image: url(../img/icons/calendar.svg);
                 
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: 5px 50%;
                 border: 1px solid #ccc;
+                border-radius: 2px;
             }
 
 
@@ -100,16 +100,21 @@
     .gap-item {
         display: flex;
         align-items: center;
-
+        width: 100%;
+        .div-input {
+            width: 100%;
+        }
         input {
-            padding: .5em;
-
+            padding: 1.2em 0 1.2em 1em;
+            width: 100%;
             border: 1px solid rgba(204, 204, 204, 0.404);
+            border-radius: 2px;
         }
     }
 
     ::-webkit-input-placeholder {
         text-align: center;
+        font-size: .9rem;
     }
 
     :-moz-placeholder {
@@ -138,8 +143,8 @@
 }
 .filter-btn-container {
     text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
+    margin: 1em auto;
+    
 }
 .filter-btn {
     text-transform: uppercase;
@@ -149,6 +154,7 @@
     padding: 1em 0;
     background-color: #21c4d7;
     color: #fff;
+    font-size: .9rem;
 }
 
 

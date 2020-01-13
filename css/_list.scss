@@ -4,11 +4,11 @@
     align-items: flex-start;
     justify-content: space-between;
 
-
     &__item {
         flex-basis: 33.333%;
         text-align: center;
         margin-top: 1.5em;
+
         img {
             width: 100%;
             max-width: 500px;
@@ -17,6 +17,8 @@
         h1 {
             color: #2993b2;
             line-height: 1.5;
+            letter-spacing: 1.8px;
+            font-size: 2.33rem;
             text-transform: uppercase;
         }
 
@@ -34,7 +36,7 @@
     .header-container {
         flex-direction: column;
         align-items: center;
-       
+
     }
 }
 
@@ -70,11 +72,12 @@
 }
 
 .social {
-  
+
     h3 {
         margin-bottom: 0.2em;
         text-align: right;
         color: rgba(0, 0, 0, 0.637);
+        letter-spacing: .8px;
     }
 
     &__icon {
@@ -84,33 +87,41 @@
         max-width: 6em;
         float: right;
         margin-right: 1.7em;
+
         div {
-            padding-left: .2em;
+            padding: .2em;
             flex-basis: 33.333%;
+           
         }
+
         img {
             width: 100%;
             max-width: 2em;
             border-radius: 5px;
         }
-        
+
+
     }
 }
+
 @media (max-width: 768px) {
     .social {
         h3 {
             text-align: center;
         }
+
         &__icon {
             max-width: 100%;
             float: none;
+
             div {
                 flex-basis: 16.666%;
             }
         }
-       
+
     }
 }
+
 @media (max-width: 425px) {
     .blue-bg {
         flex-direction: column;
@@ -142,8 +153,10 @@ h3 {
 .search-position {
     max-width: 650px;
     margin: 0 auto;
+
     span {
         font-size: 0.9rem;
+        letter-spacing: .8px;
     }
 }
 
@@ -250,10 +263,12 @@ h3 {
         color: #fff;
         font-size: 1rem;
         transition: all .6s;
+
         &:hover {
             cursor: pointer;
             background-color: #0393bb;
         }
+
         img {
             width: 100%;
             max-width: 1em;
@@ -273,13 +288,13 @@ h3 {
 
 .advert-table {
     padding: 5em 0;
-    font-size: .75rem;
     text-align: left;
+    font-size: 0.8rem;
 
     table {
         box-shadow: 0 0 10px 6px rgba(204, 204, 204, 0.466);
         border: 1px solid rgba(204, 204, 204, 0.418);
-        
+
     }
 
     thead {
@@ -295,9 +310,10 @@ h3 {
     tbody {
 
         background-color: rgba(255, 255, 255, 0.65);
+
         td {
             padding: 1em .5em;
-           
+
 
         }
 
@@ -309,20 +325,23 @@ h3 {
 
     .table-btn-container {
         display: flex;
-
+        align-items: center;
+        text-align: center;
         justify-content: space-between;
         margin-bottom: 1em;
 
         &__span {
             text-transform: uppercase;
-            font-size: 1.3rem;
+            font-size: 1.333rem;
             color: #ff2a00;
+            text-transform: center;
 
         }
 
         &__btn {
             button {
-                font-size: 1rem;
+                font-size: .9rem;
+                letter-spacing: .8px;
                 padding: .5em 1em;
                 background-color: #019cd6;
                 color: #fff;
@@ -345,6 +364,30 @@ h3 {
 
 }
 
+@media (max-width:425px) {
+    .advert-table {
+        .table-btn-container {
+            flex-direction: column;
+
+            &__span {
+                margin-bottom: 0.5em;
+            }
+
+            &__btn {
+                width: 100%;
+
+                button {
+                    width: 100%;
+
+                    span {
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -375,9 +418,10 @@ tbody {
 
         button {
             color: #fff;
-            font-size: 0.6rem;
+            font-size: 0.8rem;
+            letter-spacing: .7px;
             width: 100%;
-            
+
         }
 
         button:first-child {
@@ -385,6 +429,7 @@ tbody {
             padding: .5em 0;
             margin-bottom: 0.2em;
             transition: all .6s;
+
             &:hover {
                 cursor: pointer;
                 background-color: #22d4e7;
@@ -395,6 +440,7 @@ tbody {
             background-color: #21d7a1;
             padding: .5em 0;
             transition: all .6s;
+
             &:hover {
                 cursor: pointer;
                 background-color: #24f3b5;
@@ -406,7 +452,7 @@ tbody {
 
 td {
     img {
-         
+
         max-width: 20px;
     }
 }
@@ -417,7 +463,7 @@ td {
 
 .all-list-table {
     padding: 5em 0;
-    font-size: .75rem;
+    font-size: .8rem;
     text-align: left;
 
     table {
@@ -451,20 +497,20 @@ td {
 
     .table-btn-container {
         display: flex;
-
         justify-content: space-between;
         margin-bottom: 1em;
 
         &__span {
             text-transform: uppercase;
-            font-size: 1.3rem;
-
+            font-size: 1.333rem;
+            letter-spacing: 1.2px;
         }
 
         &__btn {
             button {
-                font-size: 1rem;
+                font-size: .9rem;
                 padding: .2em 1em;
+                letter-spacing: .8px;
                 background-color: #fdfeff;
                 color: #000;
                 display: flex;
@@ -484,4 +530,53 @@ td {
         }
     }
 
+}
+
+@media (max-width:425px) {
+    .all-list-table {
+        .table-btn-container {
+            flex-direction: column;
+
+            &__span {
+                margin-bottom: 0.5em;
+                width: 100%;
+
+                span {
+                    text-align: center;
+                    width: 100%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            &__btn {
+                width: 100%;
+
+                button {
+                    width: 100%;
+
+                    span {
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input[placeholder] {
+    text-overflow: ellipsis;
+}
+
+input::-moz-placeholder {
+    text-overflow: ellipsis;
+}
+
+input:-moz-placeholder {
+    text-overflow: ellipsis;
+}
+
+input:-ms-input-placeholder {
+    text-overflow: ellipsis;
 }
