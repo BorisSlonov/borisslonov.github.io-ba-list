@@ -389,7 +389,7 @@ h3 {
 }
 
 .advert-table thead tr th {
-  padding: 1em .5em 1em 1em;
+  padding: 1em .5em 2em 2em;
 }
 
 .advert-table tbody {
@@ -397,7 +397,7 @@ h3 {
 }
 
 .advert-table tbody td {
-  padding: 1em .5em 1em 1em;
+  padding: 1em .5em 2em 2em;
 }
 
 .advert-table tbody tr {
@@ -541,7 +541,7 @@ td img {
 }
 
 .all-list-table thead tr th {
-  padding: 1em .5em 1em 1em;
+  padding: 1em .5em 1em 2em;
 }
 
 .all-list-table tbody {
@@ -549,7 +549,7 @@ td img {
 }
 
 .all-list-table tbody td {
-  padding: 1em .5em 1em 1em;
+  padding: 1em .5em 1em 2em;
 }
 
 .all-list-table tbody tr {
@@ -591,7 +591,7 @@ td img {
 
 .all-list-table .table-btn-container__btn button:hover {
   cursor: pointer;
-  background-color: #f3f8fd;
+  background-color: #fdfeff71;
 }
 
 .all-list-table .table-btn-container__btn button img {
@@ -1003,7 +1003,7 @@ input:-ms-input-placeholder {
 }
 
 .gap-container .gap-item input {
-  padding: 1.2em 0 1.2em 1em;
+  padding: 1em 0 1em 1em;
   width: 100%;
   border: 1px solid rgba(204, 204, 204, 0.404);
   border-radius: 2px;
@@ -1011,21 +1011,24 @@ input:-ms-input-placeholder {
 
 .gap-container ::-webkit-input-placeholder {
   text-align: center;
-  font-size: .9rem;
+  font-size: .7rem;
 }
 
 .gap-container :-moz-placeholder {
   /* Firefox 18- */
   text-align: center;
+  font-size: .7rem;
 }
 
 .gap-container ::-moz-placeholder {
   /* Firefox 19+ */
   text-align: center;
+  font-size: .7rem;
 }
 
 .gap-container :-ms-input-placeholder {
   text-align: center;
+  font-size: .7rem;
 }
 
 .checkbox-container h4 {
@@ -1053,6 +1056,10 @@ input:-ms-input-placeholder {
   color: #fff;
   font-size: .9rem;
   letter-spacing: .8px;
+}
+
+.filter-btn:hover {
+  background-color: #21c5d7bd;
 }
 
 @media (max-width: 500px) {
