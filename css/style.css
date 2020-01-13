@@ -14,17 +14,17 @@ body {
   padding-bottom: 5em;
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1400px) {
   html,
   body {
-    font-size: calc(.2em + 1vw);
+    font-size: 20px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 420px) {
   html,
   body {
-    font-size: calc(.8em + 1vw);
+    font-size: 16px;
   }
 }
 
@@ -389,7 +389,7 @@ h3 {
 }
 
 .advert-table thead tr th {
-  padding: 1em .5em 2em 2em;
+  padding: 1em .5em 1em 2em;
 }
 
 .advert-table tbody {
@@ -397,7 +397,7 @@ h3 {
 }
 
 .advert-table tbody td {
-  padding: 1em .5em 2em 2em;
+  padding: 1em .5em 1em 2em;
 }
 
 .advert-table tbody tr {
