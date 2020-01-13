@@ -157,12 +157,8 @@ button {
 
 .social__icon img {
   width: 100%;
-  max-width: 2em;
+  max-width: 1.5em;
   border-radius: 5px;
-}
-
-.social__icon .youtube {
-  fill: #ff0000;
 }
 
 @media (max-width: 768px) {
