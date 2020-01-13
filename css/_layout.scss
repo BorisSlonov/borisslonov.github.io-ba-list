@@ -11,21 +11,12 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     background-image: url(../img/bg.png);
     padding-bottom: 5em;
+}
 
-}
-@media (min-width:1800px) {
-    html,
-    body {
-        font-size: calc(.2em + 1vw);
-    }
-}
-@media (max-width:425px) {
 
-    html,
-    body {
-        font-size: calc(.8em + 1vw);
-    }
-}
+
+
+
 button {
     padding: 0;
     border: none;
@@ -44,3 +35,23 @@ button {
 
 
 
+// table.footable>thead>tr>td.footable-sortable,
+// table.footable>thead>tr>th.footable-sortable,
+// table.footable>tbody>tr>td.footable-sortable,
+// table.footable>tbody>tr>th.footable-sortable,
+// table.footable>tfoot>tr>td.footable-sortable,
+// table.footable>tfoot>tr>th.footable-sortable {
+//     padding-left: 1%;
+// }
+table > tbody > tr > td > span.footable-toggle { 
+    margin-right: 4px;
+ 
+
+}
+@media (max-width:583px) {
+    table > tbody > tr > td > span.footable-toggle { 
+        margin-right: 1px;
+        margin-bottom: 3px;
+    
+    }
+}

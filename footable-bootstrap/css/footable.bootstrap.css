@@ -235,7 +235,6 @@ table.footable > tbody > tr > th.footable-sortable,
 table.footable > tfoot > tr > td.footable-sortable,
 table.footable > tfoot > tr > th.footable-sortable {
 	position: relative;
-	padding-right: 30px;
 	cursor: pointer;
 }
 td.footable-sortable > span.fooicon,

@@ -4,48 +4,238 @@
     font-size: 1rem;
     max-width: 550px;
     margin: 0 auto;
-    
-    
+    h3 {
+        text-align: left;
+    }
     div {
         display: flex;
         flex-direction: column;
         margin: 1em 0;
+
         span {
-            color: rgba(0, 0, 0, 0.747);
+            color: rgba(0, 0, 0, 0.575);
+            margin-left: 10px;
+            margin-bottom: 2.5px;
         }
+
         input {
-            padding: 1em .5em;
-           
+            padding: .4em .9em;
+            font-size: .7em;
             border: 1px solid rgba(0, 0, 0, 0.308);
             border-radius: 2px;
+            outline: none;
+            font-family: inherit;
         }
-        select {
-            padding: 1em .5em;
-            
-            border: 1px solid rgba(0, 0, 0, 0.308);
-        }
+
+      
+
         textarea {
-            padding: 2em .5em;
-         
+            padding-top: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-bottom: 3.5em;
+            font-family: inherit;
+            font-size: .7rem;
             border: 1px solid rgba(0, 0, 0, 0.308);
             border-radius: 2px;
             resize: none;
+            outline: none;
         }
     }
+
+    .select {
+        margin-bottom: 1.6em;
+        .select-span {
+            margin-bottom: 5px;
+        }
+        input {
+            display: none;
+        }
+        
+
+        #text {
+            position: absolute;
+            display: block;
+            top: 0;
+            
+            margin-top: .8em;
+            width: 100%;
+            font-family: inherit;
+            font-size: .7rem;
+        }
+
+        .select {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            font-size: .7em;
+            
+
+        }
+
+        .select:before {
+            content: ">";
+            display: inline-block;
+            position: absolute;
+            right: 0.5em;
+            z-index: 2;
+            width: 30px;
+            height: 26px;
+            text-align: center;
+            line-height: 26px;
+           
+            transform: rotate(90deg);
+            cursor: pointer;
+        }
+
+        .select input[name="list"]:not(:checked)~#text {
+            color: #000;
+            background: white;
+        }
+
+        .select input[name="list"]:checked~#text {
+            background: transparent;
+            color: transparent;
+            z-index: 2;
+        }
+
+        #select:disabled~.items #text {
+            background: #eee;
+        }
+
+        .items {
+            display: block;
+            padding-bottom: 1.5em;
+            top: -15px;
+            position: absolute;
+            border: 1px solid rgba(0, 0, 0, 0.308);
+            border-radius: 2px;
+            overflow: hidden;
+            width: 100%;
+            cursor: pointer;
+         
+           
+        }
+
+        #select:not(:checked)~.items {
+           height: 30px;
+        }
+
+        .items label {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.822);
+            display: none;
+            padding-left: 1em;
+            background: white;
+            padding-top: 0.8em;
+            padding-bottom: 0.5em;
+     
+           
+        }
+
+        .items label:hover {
+            background: #eee;
+            cursor: pointer;
+        }
+
+        #select:checked~.items {
+            padding-top: 30px;
+        }
+
+        #select:checked~.items label {
+            display: block;
+        }
+
+        .items input:checked+label {
+            display: block !important;
+            border: none;
+            background: white;
+        }
+
+        #select:checked~.bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+           
+        }
+
+        a {
+            display: block;
+            width: 160px;
+            text-align: center;
+            padding: 5px 0;
+            color: black;
+            text-decoration: none;
+           
+        }
+
+        a:hover {
+            cursor: pointer;
+            border-color: red;
+        }
+    }
+
+
+
+
+
+    //placeholder
+    ::-webkit-input-placeholder {
+        color: #000;
+        font-size: .7rem;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #000;
+        font-size: .7rem;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #000;
+        font-size: .7rem;
+    }
+
+    :-ms-input-placeholder {
+        color: #000;
+        font-size: .7rem;
+    }
 }
+
+
+
 .form-add-btn-container {
+
     button {
-        width: 100%;
         padding: 1em 0;
         color: #fff;
         text-transform: uppercase;
         border-radius: 2px;
+        transition: all .6s;
+        &:hover {
+            cursor: pointer;
+        }
     }
+
     .done {
-        background-color: green;
+        background-color: #29b133;
+
+        &:hover {
+            background-color: #31ca3b;
+
+        }
     }
+
     .dismiss {
         margin-top: .5em;
-        background-color: red;
+        background-color: #b22c29;
+
+        &:hover {
+            background-color: #cc322f;
+        }
     }
 }
