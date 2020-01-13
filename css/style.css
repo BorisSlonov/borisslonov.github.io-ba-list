@@ -40,6 +40,13 @@ table > tbody > tr > td > span.footable-toggle {
   margin-right: 2px;
 }
 
+@media (max-width: 583px) {
+  table > tbody > tr > td > span.footable-toggle {
+    margin-right: 0;
+    margin-bottom: 3px;
+  }
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
