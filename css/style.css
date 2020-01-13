@@ -486,6 +486,7 @@ h3 {
 tbody .td-btn-container {
   text-align: center;
   font-size: 1rem;
+  width: 100%;
 }
 
 tbody .td-btn-container button {
@@ -493,11 +494,11 @@ tbody .td-btn-container button {
   font-size: 0.8rem;
   letter-spacing: .7px;
   width: 100%;
+  padding: .5em 2em;
 }
 
 tbody .td-btn-container button:first-child {
   background-color: #21c4d7;
-  padding: .5em 0;
   margin-bottom: 0.2em;
   -webkit-transition: all .6s;
   transition: all .6s;
@@ -510,7 +511,6 @@ tbody .td-btn-container button:first-child:hover {
 
 tbody .td-btn-container button:last-child {
   background-color: #21d7a1;
-  padding: .5em 0;
   -webkit-transition: all .6s;
   transition: all .6s;
 }
@@ -524,7 +524,7 @@ td img {
   max-width: 20px;
 }
 
-td button {
+.like-container button {
   padding: .5em;
   border-radius: 10px;
   -webkit-transition: all .3s;
@@ -540,7 +540,7 @@ td button {
           align-items: center;
 }
 
-td button:hover {
+.like-container button:hover {
   background-color: #e4e2d74d;
 }
 
@@ -712,15 +712,29 @@ input:-ms-input-placeholder {
   color: #fff;
   text-transform: uppercase;
   border-radius: 2px;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.form-add-btn-container button:hover {
+  cursor: pointer;
 }
 
 .form-add-btn-container .done {
-  background-color: green;
+  background-color: #21d750;
+}
+
+.form-add-btn-container .done:hover {
+  background-color: #00d386;
 }
 
 .form-add-btn-container .dismiss {
   margin-top: .5em;
-  background-color: red;
+  background-color: #ff2a00;
+}
+
+.form-add-btn-container .dismiss:hover {
+  background-color: #ff2a00d2;
 }
 
 #form-top {
