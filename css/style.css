@@ -262,28 +262,24 @@ h3 {
 
 .search-form__input ::-webkit-input-placeholder {
   color: #272727;
-  text-transform: uppercase;
   letter-spacing: .8px;
   font-size: 0.8rem;
 }
 
 .search-form__input ::-moz-placeholder {
   color: #272727;
-  text-transform: uppercase;
   letter-spacing: .8px;
   font-size: 0.8rem;
 }
 
 .search-form__input :-moz-placeholder {
   color: #272727;
-  text-transform: uppercase;
   letter-spacing: .8px;
   font-size: 0.8rem;
 }
 
 .search-form__input :-ms-input-placeholder {
   color: #272727;
-  text-transform: uppercase;
   letter-spacing: .8px;
   font-size: 0.8rem;
 }
