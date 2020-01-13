@@ -43,15 +43,6 @@ button {
   padding: 0 10px;
 }
 
-table.footable > thead > tr > td.footable-sortable,
-table.footable > thead > tr > th.footable-sortable,
-table.footable > tbody > tr > td.footable-sortable,
-table.footable > tbody > tr > th.footable-sortable,
-table.footable > tfoot > tr > td.footable-sortable,
-table.footable > tfoot > tr > th.footable-sortable {
-  padding-left: 1%;
-}
-
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,16 +388,8 @@ h3 {
   background-color: #e4e2d7;
 }
 
-.advert-table thead tr th {
-  padding: 1em .5em 1em 2em;
-}
-
 .advert-table tbody {
   background-color: rgba(255, 255, 255, 0.65);
-}
-
-.advert-table tbody td {
-  padding: 1em .5em 1em 2em;
 }
 
 .advert-table tbody tr {
@@ -569,16 +552,8 @@ td img {
   background-color: #e4e2d7;
 }
 
-.all-list-table thead tr th {
-  padding: 1em .5em 1em 2em;
-}
-
 .all-list-table tbody {
   background-color: rgba(255, 255, 255, 0.65);
-}
-
-.all-list-table tbody td {
-  padding: 1em .5em 1em 2em;
 }
 
 .all-list-table tbody tr {
