@@ -14,13 +14,6 @@ body {
   padding-bottom: 5em;
 }
 
-@media (max-width: 420px) {
-  html,
-  body {
-    font-size: 16px;
-  }
-}
-
 button {
   padding: 0;
   border: none;
@@ -37,12 +30,12 @@ button {
 }
 
 table > tbody > tr > td > span.footable-toggle {
-  margin-right: 2px;
+  margin-right: 4px;
 }
 
 @media (max-width: 583px) {
   table > tbody > tr > td > span.footable-toggle {
-    margin-right: 0;
+    margin-right: 1px;
     margin-bottom: 3px;
   }
 }
