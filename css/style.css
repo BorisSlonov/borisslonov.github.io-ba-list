@@ -43,6 +43,15 @@ button {
   padding: 0 10px;
 }
 
+table.footable > thead > tr > td.footable-sortable,
+table.footable > thead > tr > th.footable-sortable,
+table.footable > tbody > tr > td.footable-sortable,
+table.footable > tbody > tr > th.footable-sortable,
+table.footable > tfoot > tr > td.footable-sortable,
+table.footable > tfoot > tr > th.footable-sortable {
+  padding-left: 1%;
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
