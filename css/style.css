@@ -43,6 +43,10 @@ button {
   padding: 0 10px;
 }
 
+table > tbody > tr > td > span.footable-toggle {
+  margin-right: 2px;
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -374,7 +378,7 @@ h3 {
 
 .advert-table {
   padding: 5em 0;
-  text-align: left;
+  text-align: center;
   font-size: 0.8rem;
 }
 
@@ -382,14 +386,33 @@ h3 {
   -webkit-box-shadow: 0 0 10px 6px rgba(204, 204, 204, 0.466);
           box-shadow: 0 0 10px 6px rgba(204, 204, 204, 0.466);
   border: 1px solid rgba(204, 204, 204, 0.418);
+  width: 100%;
 }
 
 .advert-table thead {
   background-color: #e4e2d7;
 }
 
+.advert-table thead tr th:first-child {
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.advert-table thead tr th {
+  padding: 1%;
+}
+
 .advert-table tbody {
   background-color: rgba(255, 255, 255, 0.65);
+}
+
+.advert-table tbody td:first-child {
+  padding-left: 25px;
+}
+
+.advert-table tbody td {
+  padding: 1%;
 }
 
 .advert-table tbody tr {
