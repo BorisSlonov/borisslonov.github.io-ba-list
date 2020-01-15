@@ -34,7 +34,7 @@
 
           <div>
             <h1>Ангел лист</h1>
-            <span class='h1-span'>сообщества бизнес ангелы</span>
+            <span class='h1-span'>сообщества "бизнес ангелы"</span>
           </div>
         </div>
         <!-- item -->
@@ -103,66 +103,59 @@
 
             <form action="#" id='form-add' class='search-form-add'>
               <h3>ввод нового проекта</h3>
-              <div>
+              <div class='div-input'>
                 <span>Название проекта</span>
                 <input type="text" placeholder="Производство плюшек">
               </div>
 
-              <div>
+              <div class='div-input'>
                 <span>Город</span>
                 <input type="text" placeholder="Москва">
               </div>
 
-              <div class='select'>
+              <div class='div-input'>
                 <span class='select-span'>Статус проекта</span>
-                <label for="select" class="select">
-                  <input type="radio" name="list" value="not_changed" id="bg" checked />
-                  <input type="radio" name="list" value="not_changed" id="select">
-                  <label class="bg" for="bg"></label>
-                  <div class="items">
-                    <input type="radio" name="list" value="first_value" id="list[0]">
-                    <label for="list[0]">Посев</label>
-                    <input type="radio" name="list" value="second_value" id="list[1]">
-                    <label for="list[1]">Посев</label>
-                    <span id="text">Выберите статус</span>
-                  </div>
-                </label>
-              </div>
+                <select class='select' name="#" id="#">
+                    <option value="">Посев</option>
+                </select>
+            </div>
 
-              <div>
+              <div class='div-input'>
                 <span>Сумма, руб</span>
                 <input type="number" placeholder="25 000 000">
               </div>
 
-              <div>
+              <div class='div-input'>
                 <span>Срок окупаемаости, лет</span>
                 <input type="number" placeholder="3">
               </div>
 
-              <div>
+              <div class='div-input'>
                 <span>ФИО</span>
                 <input type="text" placeholder="Иванов И И">
               </div>
 
-              <div>
+              <div class='div-input'>
                 <span>Телефон</span>
                 <input type="number" placeholder="+7 999 222 11 00">
               </div>
 
-              <div>
+              <div class='div-input'>
                 <span>Почта</span>
                 <input type="email" placeholder="example@yandex.ru">
               </div>
 
-              <div>
+              <div class='div-input'>
                 <span>Краткое описание</span>
                 <textarea>сеть плюшечных</textarea>
-              </div>
+              </div class='div-input'>
 
+           
               <div class="form-add-btn-container">
-                <button class='done'>Отправить проект</button>
-             <button class='dismiss'>Отменить</button>
+                <div><button class='done'>Отправить проект</button></div>
+                <div><button class='dismiss'>Отменить</button></div>
               </div>
+          
             </form>
           </div>
           <!-- search-form-add -->
@@ -201,8 +194,8 @@
           <p>Отправляя данную заявку Вы соглащаетесь с данными условиями, в противном случае отправлять заявку не стоит
           </p>
           <div class='form-top-btn'>
-            <button>поднять</button>
-            <button>отменить</button>
+           <div class='top-green'> <button >поднять</button></div>
+          <div>  <button>отменить</button></div>
           </div>
         </div>
       </div>

@@ -198,14 +198,14 @@ h3 {
 
         ::-webkit-input-placeholder {
             color: #272727;
-          
+
             letter-spacing: .8px;
             font-size: 0.8rem;
         }
 
         ::-moz-placeholder {
             color: #272727;
-          
+
             letter-spacing: .8px;
             font-size: 0.8rem;
         }
@@ -213,7 +213,7 @@ h3 {
         /* Firefox 19+ */
         :-moz-placeholder {
             color: #272727;
-      
+
             letter-spacing: .8px;
             font-size: 0.8rem;
         }
@@ -310,9 +310,8 @@ h3 {
 
 .advert-table {
     padding: 5em 0;
-    text-align: left;
+    text-align: center;
     font-size: 0.8rem;
-
     table {
         box-shadow: 0 0 10px 6px rgba(204, 204, 204, 0.466);
         border: 1px solid rgba(204, 204, 204, 0.418);
@@ -324,31 +323,38 @@ h3 {
 
         tr {
             th:first-child {
-                padding-left: 25px;  
-                padding-top: 10px;
-                padding-bottom: 10px;  
+                padding-left: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin: 0 5px;
             }
-            th {
-                padding: 1%;
-            }
-            
+
+           
+
+
         }
     }
-.footable-sortable .footable-last-visible {
-    width: 100%;
-    max-width: 50px;
-}
+
     tbody {
 
         background-color: rgba(255, 255, 255, 0.65);
 
         td:first-child {
-            padding-left: 25px;
+            padding-left: 5px;
         }
+       
+
         td {
-            padding: 1%;
-          
+            margin: 0 5px;
+
         }
+
+        td:last-child {
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
         tr {
             border: 5px solid #e4e2d7;
             width: 100%;
@@ -399,6 +405,44 @@ h3 {
 
 }
 
+.footable-details {
+    tbody {
+        tr {
+            th {
+                padding-left: 1em
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .advert-table {
+     
+        thead {
+            
+            tr {
+                th:first-child {
+                padding-left: 0;
+                }
+              
+            }
+        }
+    }
+
+    .footable-details {
+    tbody {
+        tr {
+            th {
+        
+                padding-left: 5px;
+                text-align: left;
+            }
+        }
+    }
+}
+}
+
+
 @media (max-width:425px) {
     .advert-table {
         .table-btn-container {
@@ -430,15 +474,8 @@ h3 {
 
 
 
-.footable-details {
-    tbody {
-        tr {
-            th {
-                padding-left: 1em
-            }
-        }
-    }
-}
+
+
 
 
 
@@ -495,32 +532,40 @@ td {
 }
 
 .like-container {
+
     button {
+        display: block;
+        margin: 0 auto;
         padding: .5em;
         border-radius: 10px;
         transition: all .3s;
         display: flex;
         justify-content: center;
         align-items: center;
+
         &:hover {
             background-color: #06f762;
         }
     }
-    
+
 }
+
 .dislike-container {
     button {
+        display: block;
+        margin: 0 auto;
         padding: .5em;
         border-radius: 10px;
         transition: all .3s;
         display: flex;
         justify-content: center;
         align-items: center;
+
         &:hover {
             background-color: #ff2a00;
         }
     }
-    
+
 }
 
 // table2
@@ -528,7 +573,7 @@ td {
 .all-list-table {
     padding: 5em 0;
     font-size: .8rem;
-    text-align: left;
+    text-align: center;
 
     table {
         box-shadow: 0 0 10px 6px rgba(204, 204, 204, 0.466);
@@ -538,26 +583,34 @@ td {
     thead {
         background-color: #e4e2d7;
 
-       tr {
-        th:first-child {
-            padding-left: 25px;  
-            padding-top: 10px;
-            padding-bottom: 10px;  
+        tr {
+            th:first-child {
+                padding-left: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            th {
+                margin: 0 5px;
+            }
         }
-        th {
-            padding: 1%;
-        }
-       }
     }
 
     tbody {
         background-color: rgba(255, 255, 255, 0.65);
 
-         td:first-child {
-            padding-left: 25px;
+        td:first-child {
+            padding-left: 5px;
         }
+
         td {
-            padding: 1%;
+            margin: 0 5px;
+        }
+
+        td:last-child {
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
 
         tr {
@@ -604,7 +657,20 @@ td {
     }
 
 }
-
+@media (max-width: 992px) {
+    .all-list-table {
+     
+        thead {
+            
+            tr {
+                th:first-child {
+                padding-left: 0;
+                }
+              
+            }
+        }
+    }
+}
 @media (max-width:425px) {
     .all-list-table {
         .table-btn-container {

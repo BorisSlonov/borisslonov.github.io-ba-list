@@ -1,8 +1,9 @@
 #form-top {
     display: none;
 }
+
 .form-top-container {
-  
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,6 +11,7 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
+
     p {
         margin: 1em 0;
     }
@@ -17,22 +19,46 @@
 
 .form-top-btn {
     display: flex;
-    flex-direction: column;
     width: 100%;
-
-    button {
-        text-transform: uppercase;
-        color: #fff;
-    }
-
-    button:first-child {
-        background-color: green;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 -8px;
+    .top-green {
+        button {
+        background-color: #29b133;
         padding: 1em 0;
-    }
+        transition: all .6s;
 
-    button:last-child {
-        margin-top: 0.5em;
-        background-color: red;
-        padding: 1em 0;
+        &:hover {
+            background-color: #31ca3b;
+
+        }
+        }
+    }
+    div {
+        width: 100%;
+        margin: 0 8px;
+        button {
+            width: 100%;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        
+
+        button {
+            margin-top: 0.5em;
+            background-color: #b22c29;
+            padding: 1em 0;
+
+            &:hover {
+                background-color: #cc322f;
+            }
+        }
+    }
+}
+@media (max-width: 425px) {
+    .form-top-btn {
+        flex-direction: column;
     }
 }
