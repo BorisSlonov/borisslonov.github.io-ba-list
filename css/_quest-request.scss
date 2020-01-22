@@ -1,8 +1,10 @@
-.request-form {
+#request-form {
     display: none;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 650px;
+}
+.request-form {
+  
 
     h4 {
         text-align: left;
@@ -11,6 +13,7 @@
         margin-bottom: 1em;
     }
     .invest {
+        margin-top: 0;
         display: flex;
         input:first-child {
             margin-right: 0.2em;
@@ -26,13 +29,15 @@
         span {
             display: flex;
             flex-direction: column;
+            margin-bottom: 2.5px;
         }
 
         input {
             width: 100%;
             padding: 1em;
             outline: none;
-            border: none;
+            border: 1px solid rgba(0, 0, 0, 0.521);
+           border-radius: 2px;
 
 
         }
@@ -60,17 +65,18 @@
 
 
 //question-form
-
-.quest-form {
+#quest-form {
     display: none;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 650px;
+}
+.quest-form {
+  
 
     h4 {
         text-align: left;
         text-transform: uppercase;
-        columns: rgba(0, 0, 0, 0.555);
+        color: rgba(0, 0, 0, 0.555);
         margin-bottom: 1em;
     }
    
@@ -81,13 +87,15 @@
         span {
             display: flex;
             flex-direction: column;
+            margin-bottom: 2.5px;
         }
 
         input {
             width: 100%;
             padding: 1em;
             outline: none;
-            border: none;
+           border: 1px solid rgba(0, 0, 0, 0.521);
+           border-radius: 2px;
 
 
         }

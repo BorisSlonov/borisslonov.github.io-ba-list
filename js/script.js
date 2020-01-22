@@ -3,32 +3,78 @@ $(document).ready(function () {
 
   $('.table').footable();
 
-
-  //modal-add
-  
   $(".modalbox").fancybox();
-  $("#form-add").submit(function () {
+
+
+
+
+
+ //modal-form-add
+  
+ $(".modalbox").fancybox();
+ $("#form-add").submit(function () {
+     return false;
+ });
+ $("#form-add-btn-close").on("click", function () {
+
+     // тут дальнейшие действия по обработке формы
+     // закрываем окно, как правило делать это нужно после обработки данных
+     $("#form-add").fadeOut("slow", function () {
+         $(this).before("");
+         setTimeout("$.fancybox.close()", 500);
+     });
+ });
+
+
+ // modal-form-top
+
+ $(".modalbox").fancybox();
+ $("#form-top").submit(function () {
+     return false;
+ });
+ $("#form-top-btn-close").on("click", function () {
+
+     // тут дальнейшие действия по обработке формы
+     // закрываем окно, как правило делать это нужно после обработки данных
+     $("#form-top").fadeOut("slow", function () {
+         $(this).before("");
+         setTimeout("$.fancybox.close()", 500);
+     });
+ });
+
+  // modal-request
+
+  $(".modalbox").fancybox();
+  $("#request-form").submit(function () {
       return false;
   });
-  $("#form-add-btn").on("click", function () {
-
+  $("#request-form-btn-close").on("click", function () {
+ 
       // тут дальнейшие действия по обработке формы
       // закрываем окно, как правило делать это нужно после обработки данных
-      $("#form-add").fadeOut("slow", function () {
+      $("#request-form").fadeOut("slow", function () {
           $(this).before("");
           setTimeout("$.fancybox.close()", 500);
       });
   });
 
 
+// modal-quest
 
+$(".modalbox").fancybox();
+$("#quest-form").submit(function () {
+    return false;
+});
+$("#quest-form-btn-close").on("click", function () {
 
+    // тут дальнейшие действия по обработке формы
+    // закрываем окно, как правило делать это нужно после обработки данных
+    $("#quest-form").fadeOut("slow", function () {
+        $(this).before("");
+        setTimeout("$.fancybox.close()", 500);
+    });
+});
 
-  //request    
-  $(".modalbox").fancybox();
-  $("#request-form").submit(function () {
-      return false;
-  });
 
 
 
@@ -43,8 +89,6 @@ $(document).ready(function () {
 });
 
 //picker
-
-
 
 });
   

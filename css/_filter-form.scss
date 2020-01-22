@@ -80,8 +80,8 @@
             align-items: center;
 
             input {
-                padding-top: 0.5em;
-                padding-bottom: 0.5em;
+                padding-top: 0.27em;
+                padding-bottom: 0.27em;
                 padding-left: 4.5em;
                 background-image: url(../img/icons/calendar.svg);
                 background-repeat: no-repeat;
@@ -92,7 +92,27 @@
                 font-family: inherit;
             }
 
-
+            ::-webkit-input-placeholder {
+                text-align: center;
+                font-size: .7rem;
+            }
+        
+            :-moz-placeholder {
+                /* Firefox 18- */
+                text-align: center;
+                font-size: .7rem;
+            }
+        
+            ::-moz-placeholder {
+                /* Firefox 19+ */
+                text-align: center;
+                font-size: .7rem;
+            }
+        
+            :-ms-input-placeholder {
+                text-align: center;
+                font-size: .7rem;
+            }
         }
     }
 }

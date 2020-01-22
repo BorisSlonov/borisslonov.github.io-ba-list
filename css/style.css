@@ -470,7 +470,7 @@ h3 {
 
 @media (max-width: 992px) {
   .advert-table thead tr th:first-child {
-    padding-left: 0;
+    padding-left: 10px;
   }
   .footable-details tbody tr th {
     padding-left: 5px;
@@ -986,11 +986,13 @@ input:-ms-input-placeholder {
   }
 }
 
-.request-form {
+#request-form {
   display: none;
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 650px;
+}
+
+.request-form {
   /* Firefox 19+ */
   /* Firefox 18- */
 }
@@ -1004,6 +1006,7 @@ input:-ms-input-placeholder {
 }
 
 .request-form .invest {
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1029,13 +1032,15 @@ input:-ms-input-placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 2.5px;
 }
 
 .request-form div input {
   width: 100%;
   padding: 1em;
   outline: none;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.521);
+  border-radius: 2px;
 }
 
 .request-form ::-webkit-input-placeholder {
@@ -1054,11 +1059,13 @@ input:-ms-input-placeholder {
   font-size: 1rem;
 }
 
-.quest-form {
+#quest-form {
   display: none;
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 650px;
+}
+
+.quest-form {
   /* Firefox 19+ */
   /* Firefox 18- */
 }
@@ -1066,8 +1073,7 @@ input:-ms-input-placeholder {
 .quest-form h4 {
   text-align: left;
   text-transform: uppercase;
-  -webkit-columns: rgba(0, 0, 0, 0.555);
-          columns: rgba(0, 0, 0, 0.555);
+  color: rgba(0, 0, 0, 0.555);
   margin-bottom: 1em;
 }
 
@@ -1083,13 +1089,15 @@ input:-ms-input-placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 2.5px;
 }
 
 .quest-form div input {
   width: 100%;
   padding: 1em;
   outline: none;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.521);
+  border-radius: 2px;
 }
 
 .quest-form ::-webkit-input-placeholder {
@@ -1198,8 +1206,8 @@ input:-ms-input-placeholder {
 }
 
 .calendar .gap-container .gap-item input {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.27em;
+  padding-bottom: 0.27em;
   padding-left: 4.5em;
   background-image: url(../img/icons/calendar.svg);
   background-repeat: no-repeat;
@@ -1208,6 +1216,28 @@ input:-ms-input-placeholder {
   border: 1px solid #ccc;
   border-radius: 2px;
   font-family: inherit;
+}
+
+.calendar .gap-container .gap-item ::-webkit-input-placeholder {
+  text-align: center;
+  font-size: .7rem;
+}
+
+.calendar .gap-container .gap-item :-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+  font-size: .7rem;
+}
+
+.calendar .gap-container .gap-item ::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+  font-size: .7rem;
+}
+
+.calendar .gap-container .gap-item :-ms-input-placeholder {
+  text-align: center;
+  font-size: .7rem;
 }
 
 .gap-container {
