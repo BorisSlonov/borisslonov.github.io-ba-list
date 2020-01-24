@@ -1036,7 +1036,7 @@ input:-ms-input-placeholder {
 
 .request-form div input {
   width: 100%;
-  padding: 1.2em;
+  height: 35px;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.521);
   border-radius: 2px;
