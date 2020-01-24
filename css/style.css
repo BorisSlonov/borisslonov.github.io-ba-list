@@ -720,19 +720,24 @@ td img {
 
 input[placeholder] {
   text-overflow: ellipsis;
+  height: 100%;
 }
 
 input::-moz-placeholder {
   text-overflow: ellipsis;
+  height: 100%;
 }
 
 input:-moz-placeholder {
   text-overflow: ellipsis;
+  height: 100%;
 }
 
 input:-ms-input-placeholder {
   text-overflow: ellipsis;
+  height: 100%;
 }
+
 
 .search-form-add {
   display: none;
