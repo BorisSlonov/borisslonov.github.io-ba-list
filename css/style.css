@@ -470,7 +470,7 @@ h3 {
 
 @media (max-width: 992px) {
   .advert-table thead tr th:first-child {
-    padding-left: 10px;
+    padding-left: 0;
   }
   .footable-details tbody tr th {
     padding-left: 5px;
@@ -720,24 +720,19 @@ td img {
 
 input[placeholder] {
   text-overflow: ellipsis;
-  height: 100%;
 }
 
 input::-moz-placeholder {
   text-overflow: ellipsis;
-  height: 100%;
 }
 
 input:-moz-placeholder {
   text-overflow: ellipsis;
-  height: 100%;
 }
 
 input:-ms-input-placeholder {
   text-overflow: ellipsis;
-  height: 100%;
 }
-
 
 .search-form-add {
   display: none;
@@ -992,7 +987,6 @@ input:-ms-input-placeholder {
 }
 
 #request-form {
-  display: none;
   width: 100%;
   max-width: 650px;
 }
@@ -1050,18 +1044,22 @@ input:-ms-input-placeholder {
 
 .request-form ::-webkit-input-placeholder {
   font-size: 1rem;
+  height: 100%;
 }
 
 .request-form ::-moz-placeholder {
   font-size: 1rem;
+  height: 100%;
 }
 
 .request-form :-moz-placeholder {
   font-size: 1rem;
+  height: 100%;
 }
 
 .request-form :-ms-input-placeholder {
   font-size: 1rem;
+  height: 100%;
 }
 
 #quest-form {
@@ -1107,18 +1105,26 @@ input:-ms-input-placeholder {
 
 .quest-form ::-webkit-input-placeholder {
   font-size: 1rem;
+  height: 100%;
+  padding: 4px;
 }
 
 .quest-form ::-moz-placeholder {
   font-size: 1rem;
+  height: 100%;
+  padding: 4px;
 }
 
 .quest-form :-moz-placeholder {
   font-size: 1rem;
+  height: 100%;
+  padding: 4px;
 }
 
 .quest-form :-ms-input-placeholder {
   font-size: 1rem;
+  height: 100%;
+  padding: 4px;
 }
 
 #filter-form {
