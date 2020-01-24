@@ -1037,7 +1037,7 @@ input:-ms-input-placeholder {
 .request-form div input {
   font-size: 1.2rem;
   width: 100%;
-  padding: 1px;
+  padding: 1.2px;
   height: 100%;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.521);
@@ -1046,22 +1046,18 @@ input:-ms-input-placeholder {
 
 .request-form ::-webkit-input-placeholder {
   font-size: 1rem;
-  height: 100%;
 }
 
 .request-form ::-moz-placeholder {
   font-size: 1rem;
-  height: 100%;
 }
 
 .request-form :-moz-placeholder {
   font-size: 1rem;
-  height: 100%;
 }
 
 .request-form :-ms-input-placeholder {
   font-size: 1rem;
-  height: 100%;
 }
 
 #quest-form {
@@ -1099,7 +1095,8 @@ input:-ms-input-placeholder {
 
 .quest-form div input {
   width: 100%;
-  padding: 1em;
+  padding: 1.2rem;
+  font-size: 1.2rem;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.521);
   border-radius: 2px;
@@ -1107,22 +1104,18 @@ input:-ms-input-placeholder {
 
 .quest-form ::-webkit-input-placeholder {
   font-size: 1rem;
-  height: 100%;
 }
 
 .quest-form ::-moz-placeholder {
   font-size: 1rem;
-  height: 100%;
 }
 
 .quest-form :-moz-placeholder {
   font-size: 1rem;
-  height: 100%;
 }
 
 .quest-form :-ms-input-placeholder {
   font-size: 1rem;
-  height: 100%;
 }
 
 #filter-form {
