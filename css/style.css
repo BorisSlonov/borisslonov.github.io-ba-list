@@ -1119,7 +1119,6 @@ input:-ms-input-placeholder {
 }
 
 #filter-form {
-  display: none;
   width: 100%;
   max-width: 550px;
 }
